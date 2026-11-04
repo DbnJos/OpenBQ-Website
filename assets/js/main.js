@@ -130,7 +130,7 @@
   const scanner = $('#scanner');
   if (scanner) {
     const iris = (id, q, iso, gs, conc, ipc, ratio, isc, usable) => ({
-      id, score: q, headline: `ISO overall quality: ${iso}`, meta: 'BIQT overall quality score (0–100)',
+      id, score: q, headline: `ISO overall quality: ${q}`, meta: 'BIQT overall quality score (0–100)',
       metrics: [
         { name: 'Greyscale utilisation', value: gs.toFixed(2), note: 'Recommended ≥ 6', ok: gs >= 6 },
         { name: 'Iris–pupil concentricity', value: conc.toFixed(1), note: 'Recommended ≥ 90', ok: conc >= 90 },
