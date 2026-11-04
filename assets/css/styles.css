@@ -526,3 +526,40 @@ code, .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 }
 .li-follow:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-1px); color: var(--ink); }
 .li-follow img { height: 26px; width: auto; }
+
+
+/* Integration pathways */
+.path { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 20px; margin-top: 14px; }
+.path h3 { font-size: 1.1rem; margin-bottom: 14px; }
+.path p { margin: 14px 0 0; font-size: .95rem; }
+.flow--compact { grid-template-columns: minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr); }
+.flow--compact .flow-node { padding: 12px 8px; }
+.flow--compact .flow-node strong { font-size: .9rem; }
+
+/* Role tabs */
+.learning-note { background: var(--blue-10); border-radius: var(--radius-sm); padding: 16px 18px; margin-top: 18px; }
+.learning-note .eyebrow { margin-bottom: 6px; font-size: .78rem; }
+.learning-note p { margin: 0; }
+
+@media (max-width: 680px) {
+  .flow--compact { grid-template-columns: minmax(0,1fr); }
+}
+
+/* Role tabs: one row, equal widths */
+#roles .tablist {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  margin-bottom: 24px;
+}
+#roles .tab {
+  padding: 10px 8px;
+  font-size: .9rem;
+  white-space: nowrap;
+}
+
+/* Narrow screens: 2 x 2 */
+@media (max-width: 1100px) {
+  #roles .tablist { grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: 18px; }
+  #roles .tab { border-radius: 12px; }
+}
