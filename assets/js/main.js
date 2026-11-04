@@ -1,6 +1,7 @@
 /* openbq.io — site interactions (vanilla JS, no dependencies) */
 (function () {
   'use strict';
+
   document.documentElement.classList.remove('no-js');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, el = document) => el.querySelector(s);
