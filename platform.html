@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How OpenBq works | OpenBq</title>
+  <meta name="description" content="How openbq measures biometric quality across the identity lifecycle — modular architecture, deployment scenarios, scaling and standards.">
+  <meta name="theme-color" content="#24408E">
+  <meta property="og:title" content="How Openbq works | OpenBq">
+  <meta property="og:description" content="How OpenBq measures biometric quality across the identity lifecycle — modular architecture, deployment scenarios, scaling and standards.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/video/overview-poster.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/openbq-icon.svg">
+  <link rel="preload" href="assets/fonts/quicksand-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="openbq home">
+      <img src="assets/img/brand/logo-color.svg" alt="openbq" width="160" height="50">
+    </a>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="platform.html">How it works</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="open-source.html">Open source</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--ghost" href="https://docs.openbq.io/" target="_blank" rel="noopener">Docs</a>
+      <a class="btn btn--primary" href="contact.html">Get in touch</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / How it works</p>
+      <h1>How Open<b class="bq">Bq</b> works</h1>
+      <p class="lead">A modular, standards-based framework that measures biometric quality wherever it matters — from the capture device to governance reporting.</p>
+      
+    </div>
+  </section>
+
+<main id="main">
+  <section class="section" id="lifecycle-section" aria-labelledby="lc-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">The identity lifecycle</span>
+        <h2 id="lc-title">Quality matters at every stage. It is often not measured.</h2>
+        <p class="lead">Select a stage to see where Open<b>Bq</b> helps.</p>
+      </div>
+      <div class="lifecycle" id="lifecycle">
+        <div class="wheel">
+          <svg viewBox="0 0 520 520" role="group" aria-label="Identity lifecycle stages">
+<path class="seg" d="M269.2 20.2 A240 240 0 0 1 485.2 177.1 L378.5 211.7 A128 128 0 0 0 269.3 132.3Z" tabindex="0" role="button" aria-label="Stage 1: Acquisition device"/><text class="seg-label" x="369" y="106">Acquisition</text><text class="seg-label" x="369" y="126">device</text>
+<path class="seg" d="M490.9 194.7 A240 240 0 0 1 408.4 448.6 L342.6 357.8 A128 128 0 0 0 384.3 229.4Z" tabindex="0" role="button" aria-label="Stage 2: Registration client"/><text class="seg-label" x="437" y="313">Registration</text><text class="seg-label" x="437" y="333">client</text>
+<path class="seg" d="M393.5 459.4 A240 240 0 0 1 126.5 459.4 L192.5 368.8 A128 128 0 0 0 327.5 368.8Z" tabindex="0" role="button" aria-label="Stage 3: ABIS"/><text class="seg-label" x="260" y="452">ABIS</text>
+<path class="seg" d="M111.6 448.6 A240 240 0 0 1 29.1 194.7 L135.7 229.4 A128 128 0 0 0 177.4 357.8Z" tabindex="0" role="button" aria-label="Stage 4: Governance & reporting"/><text class="seg-label" x="83" y="313">Governance</text><text class="seg-label" x="83" y="333">& reporting</text>
+<path class="seg" d="M34.8 177.1 A240 240 0 0 1 250.8 20.2 L250.7 132.3 A128 128 0 0 0 141.5 211.7Z" tabindex="0" role="button" aria-label="Stage 5: Feedback loop"/><text class="seg-label" x="151" y="106">Feedback</text><text class="seg-label" x="151" y="126">loop</text>
+          </svg>
+          <div class="wheel-center"><img src="assets/img/brand/openbq-icon.svg" alt="" width="120" height="120"></div>
+        </div>
+        <div class="stage-panel corners" id="stage-panel" aria-live="polite">
+          <div class="card">
+            <span class="stage-count">Stage 1 of 5</span>
+            <h3 style="font-size:clamp(1.6rem,2.6vw,2rem);margin-top:8px">Acquisition device</h3>
+            <p class="muted"></p>
+            <ul></ul>
+            <div class="stage-nav">
+              <button class="btn btn--ghost" type="button" data-stage="prev">← Previous</button>
+              <button class="btn btn--dark" type="button" data-stage="next">Next stage →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-2" style="margin-top:clamp(48px,6vw,72px)">
+        <article class="card card--tint reveal">
+          <span class="eyebrow">Plan &amp; implement</span>
+          <h3>Before a system goes live at scale</h3>
+          <p class="muted">These phases decide whether problems are detected early or embedded into the system.</p>
+          <ul><li>Product selection and tender evaluation</li><li>Checking existing data</li><li>Proofs of concept and pilots</li><li>Production systems</li></ul>
+        </article>
+        <article class="card card--tint reveal">
+          <span class="eyebrow">Operate</span>
+          <h3>Once a system is live</h3>
+          <p class="muted">The focus shifts to sustainability — quality keeps evolving as enrolment expands and conditions change.</p>
+          <ul><li>Registration (enrolment) quality checking and feedback</li><li>On-going quality monitoring at scale</li><li>Reporting and decision support</li><li>Training resources</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="architecture-section" aria-labelledby="arch-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Architecture</span>
+        <h2 id="arch-title">A modular framework. Use one layer, or the whole stack.</h2>
+      </div>
+      <div class="arch" id="architecture">
+        <div class="stack">
+          <button class="stack-learn" type="button" data-layer="bqlearn" aria-pressed="false"><span><b>bq</b>learn</span></button>
+          <button class="layer" type="button" data-layer="bqinsights" aria-pressed="true"><span class="layer-name"><b>bq</b>insights</span><span class="layer-tags"><span>Reports</span><span>Raw data</span><span>AI</span></span></button>
+          <button class="layer" type="button" data-layer="bqconnect" aria-pressed="false"><span class="layer-name"><b>bq</b>connect</span><span class="layer-tags"><span>CLI</span><span>GUI</span></span></button>
+          <button class="layer" type="button" data-layer="bqcore" aria-pressed="false"><span class="layer-name"><b>bq</b>core</span><span class="layer-tags"><span>Orchestration</span><span>Engine integration</span><span>Face · Finger · Voice · Iris · Biographic</span></span></button>
+        </div>
+        <div class="layer-detail" id="layer-detail" aria-live="polite">
+          <span class="eyebrow" style="color:var(--dark-blue)">Layer detail</span>
+          <h3></h3>
+          <p class="muted"></p>
+          <ul></ul>
+          <a class="text-link" href="https://docs.openbq.io/" target="_blank" rel="noopener">Read the documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section section--alt" id="deployment-section" aria-labelledby="dep-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Deployment scenarios</span>
+        <h2 id="dep-title">Deploy it your way</h2>
+      </div>
+      <div class="tablist" role="tablist" aria-label="Deployment scenario"><button class="tab" role="tab" id="t-profiling" aria-controls="p-profiling" aria-selected="true">Profiling (batch)</button><button class="tab" role="tab" id="t-capture" aria-controls="p-capture" aria-selected="false">Capture (real time)</button><button class="tab" role="tab" id="t-monitoring" aria-controls="p-monitoring" aria-selected="false">Monitoring</button></div>
+      
+        <div class="tabpanel" role="tabpanel" id="p-profiling" aria-labelledby="t-profiling" >
+          <div class="flow">
+            <div class="flow-node"><small>Input</small><strong>Biometric sample store</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node flow-node--engine"><small>Engine</small><strong>openbq</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node"><small>Output</small><strong>Raw data + reports</strong></div>
+          </div>
+          <p class="flow-caption">Audit existing databases before procurement, before go-live, or as part of a quality review.</p>
+        </div>
+        <div class="tabpanel" role="tabpanel" id="p-capture" aria-labelledby="t-capture" hidden>
+          <div class="flow">
+            <div class="flow-node"><small>Input</small><strong>Biometric sample capture</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node flow-node--engine"><small>Engine</small><strong>openbq</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node"><small>Output</small><strong>Real-time feedback</strong></div>
+          </div>
+          <p class="flow-caption">Give operators instant feedback so poor samples are re-captured while the person is still present.</p>
+        </div>
+        <div class="tabpanel" role="tabpanel" id="p-monitoring" aria-labelledby="t-monitoring" hidden>
+          <div class="flow">
+            <div class="flow-node"><small>Input</small><strong>Identity system</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node flow-node--engine"><small>Engine</small><strong>openbq</strong></div>
+            <div class="flow-link" aria-hidden="true"></div>
+            <div class="flow-node"><small>Output</small><strong>Reports</strong></div>
+          </div>
+          <p class="flow-caption">Track quality trends across sites, devices and operators once your system is live.</p>
+        </div>
+      <div class="grid grid-2" style="margin-top:48px">
+        <article class="card scale-card reveal">
+          <div class="scale-diagram" aria-hidden="true"><div class="node node--big">bqCore</div></div>
+          <div><h3>Scale up</h3><p class="muted">Add CPU and RAM resources to a single bqCore node to meet your performance requirements.</p></div>
+        </article>
+        <article class="card scale-card reveal">
+          <div class="scale-diagram" aria-hidden="true"><div class="nodes-out"><div class="node node--coord">coordinator</div><div class="node">worker</div><div class="node">worker</div><div class="node">worker</div></div></div>
+          <div><h3>Scale out</h3><p class="muted">Any number of bqCore worker nodes can be controlled by a coordinator node, using solutions such as Kubernetes.</p></div>
+        </article>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section" id="standards-section" aria-labelledby="std-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Standards &amp; algorithms</span>
+        <h2 id="std-title">Built on internationally recognised standards</h2>
+        <p class="muted">Open<b>Bq</b> utilises benchmarked quality algorithms to support analysis in compliance with the ISO/IEC 29794 suite and other quality algorithms — and highlights open-source engines such as NFIQ 2.0 and OFIQ to adopt or contribute to.</p>
+        <a class="text-link" href="solutions.html#research">How researchers use Open<b>Bq</b></a>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal"><img class="icon-frame" src="assets/img/icons/icon-fingerprint-frame.svg" alt=""><h3>ISO/IEC 29794-4</h3><p class="muted">Fingerprint quality, e.g. NFIQ 2.0</p></div>
+        <div class="card reveal"><img class="icon-frame" src="assets/img/icons/icon-face-frame.svg" alt=""><h3>ISO/IEC 29794-5</h3><p class="muted">Face image quality, e.g. OFIQ</p></div>
+        <div class="card reveal"><img class="icon-frame" src="assets/img/icons/icon-iris-frame.svg" alt=""><h3>ISO/IEC 29794-6</h3><p class="muted">Iris image quality</p></div>
+        <div class="card reveal"><img class="icon-frame" src="assets/img/icons/icon-voice-frame.svg" alt=""><h3>Custom engines</h3><p class="muted">Integrate your own algorithms through bqcore</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2 id="cta-title">See Open<b class="bq">Bq</b> on your data</h2>
+          <p>Tell us about your programme or research and we’ll show you open<b>bq</b> on your kind of data.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn--white" href="https://bixelab.snapforms.com.au/form/openbq-register-interest?area%20of%20interest=National%20Deployments&amp;showheader=1" target="_blank" rel="noopener">National deployments <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="https://bixelab.snapforms.com.au/form/openbq-register-interest?area%20of%20interest=Biometric%20Quality%20Analysis&amp;showheader=1" target="_blank" rel="noopener">Quality analysis &amp; research <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/brand/logo-tagline-white.svg" alt="openbq — Better biometrics, better outcomes" width="240" height="98">
+        <p>An open-source biometric quality framework. Developed by <a href="https://biometix.com" target="_blank" rel="noopener">Biometix</a> in collaboration with MOSIP and BixeLab.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Platform</h3>
+        <ul>
+          <li><a href="platform.html#lifecycle-section">Identity lifecycle</a></li>
+          <li><a href="platform.html#architecture-section">Architecture</a></li>
+          <li><a href="platform.html#deployment-section">Deployment</a></li>
+          <li><a href="platform.html#standards-section">Standards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Solutions</h3>
+        <ul>
+          <li><a href="solutions.html#national">National ID owners</a></li>
+          <li><a href="solutions.html#research">Research &amp; design</a></li>
+          <li><a href="solutions.html#evidence">Evidence</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Community</h3>
+        <ul>
+          <li><a href="open-source.html">Open source</a></li>
+          <li><a href="open-source.html#roadmap">Roadmap</a></li>
+          <li><a href="https://docs.openbq.io/" target="_blank" rel="noopener">Documentation</a></li>
+          <li><a href="contact.html#newsletter">Newsletter</a></li>
+          <li><a href="https://www.linkedin.com/company/biometricquality/home/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Open<b class="bq">Bq</b>. Open-source biometric quality assessment · Apache 2.0</span>
+      <span>Developed by Biometix Pty Ltd · Canberra, Australia</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
