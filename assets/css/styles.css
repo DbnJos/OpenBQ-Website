@@ -576,3 +576,71 @@ code, .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 .scale-viz .node--ghost { background: transparent; border: 2px dashed var(--blue-60); }
 .scale-viz--grid { display: grid; grid-template-columns: repeat(6, 22px); grid-auto-rows: 22px; gap: 6px; height: auto; min-height: 64px; align-content: center; }
 .scale-extend { margin: 24px 0 0; color: var(--text-muted); }
+
+/* Get in touch buttton styling */
+/* ---------- Header: Docs link + biometric "Get in touch" ---------- */
+.nav-ext {
+  position: relative; display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-accent); font-weight: 600; font-size: 1rem;
+  color: var(--dark-blue); text-decoration: none; padding: 8px 4px;
+}
+.nav-ext svg { width: 16px; height: 16px; transition: transform .25s ease; }
+.nav-ext::after {
+  content: ""; position: absolute; left: 4px; right: 4px; bottom: 4px; height: 2px;
+  background: var(--blue); border-radius: 2px;
+  transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+}
+.nav-ext:hover { color: var(--blue); }
+.nav-ext:hover::after { transform: scaleX(1); }
+.nav-ext:hover svg { transform: translate(2px, -2px); }
+
+.btn-cta {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: inline-flex; align-items: center; gap: 12px;
+  min-height: 52px; padding: 4px 4px 4px 22px; border-radius: 999px;
+  background: var(--gradient); color: #fff; text-decoration: none;
+  font-family: var(--font-accent); font-weight: 700; font-size: 1rem;
+  box-shadow: 0 8px 22px rgba(36, 64, 142, .25);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.btn-cta::before { /* light sweep on hover */
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);
+  transform: translateX(-120%); transition: transform .6s ease;
+}
+.btn-cta:hover { color: #fff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(36, 64, 142, .35); }
+.btn-cta:hover::before { transform: translateX(120%); }
+
+/* Segmented ring (echoes the logo) + fingerprint + scan line */
+.btn-cta__badge { position: relative; width: 44px; height: 44px; flex: none; }
+.btn-cta__ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: repeating-conic-gradient(#fff 0deg 24deg, transparent 24deg 30deg);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+  transition: transform .6s ease;
+}
+.btn-cta__print {
+  position: absolute; inset: 5px; border-radius: 50%; background: #fff;
+  display: grid; place-items: center; overflow: hidden;
+}
+.btn-cta__print img { width: 78%; height: 78%; }
+.btn-cta__print::after {
+  content: ""; position: absolute; left: 10%; right: 10%; height: 2px; top: 15%;
+  background: var(--blue); box-shadow: 0 0 6px 1px var(--blue); border-radius: 2px; opacity: 0;
+}
+.btn-cta:hover .btn-cta__ring, .btn-cta:focus-visible .btn-cta__ring { transform: rotate(90deg); }
+.btn-cta:hover .btn-cta__print::after, .btn-cta:focus-visible .btn-cta__print::after { animation: btn-scan 1.1s ease-in-out infinite alternate; }
+@keyframes btn-scan { from { top: 15%; opacity: 1; } to { top: 82%; opacity: 1; } }
+
+/* Docs moves into the menu on smaller screens */
+.nav-docs { display: none; }
+@media (max-width: 1020px) {
+  .nav-ext { display: none; }
+  .nav .nav-docs { display: block; }
+}
+/* Phones: keep the label, slightly smaller */
+@media (max-width: 560px) {
+  .btn-cta { padding: 4px 4px 4px 14px; gap: 8px; font-size: .9rem; min-height: 48px; white-space: nowrap; }
+  .btn-cta__badge { width: 40px; height: 40px; }
+}
