@@ -59,6 +59,7 @@
   <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
+  <a href="index.html#news"><img  src="assets/img/socials/LI-In-Bug.png" alt="LinkedIn" width="40" height="30"></a>
 </div>
     </div>
   </header>
@@ -86,70 +87,38 @@
             </div>
           </div>
 
-          <div class="scanner" id="scanner" aria-label="Example quality assessment">
-            <div class="scanner-tabs" role="tablist" aria-label="Choose a modality">
-              <button class="scanner-tab" role="tab" id="tab-fingerprint" aria-controls="scan-panel"
-                aria-selected="true" data-modality="fingerprint">
-                <img src="assets/img/icons/icon-fingerprint.svg" alt="" width="26" height="26">Fingerprint
-              </button>
-                <button class="scanner-tab" role="tab" id="tab-face" aria-controls="scan-panel" aria-selected="false"
-                data-modality="face">
-                <img src="assets/img/icons/icon-face.svg" alt="" width="26" height="26">Face
-              </button>
-              <button class="scanner-tab" role="tab" id="tab-iris" aria-controls="scan-panel" aria-selected="false"
-                data-modality="iris">
-                <img src="assets/img/icons/icon-iris.svg" alt="" width="26" height="26">Iris
-              </button>
-              <button class="scanner-tab" role="tab" id="tab-voice" aria-controls="scan-panel" aria-selected="false"
-                data-modality="voice">
-                <img src="assets/img/icons/icon-voice.svg" alt="" width="26" height="26">Voice
-              </button>
-            </div>
-            <!-- <div class="scanner-body" id="scan-panel" role="tabpanel" aria-live="polite">
-              <div class="scanner-sample"><img src="assets/img/icons/icon-face.svg" alt="" width="90" height="90"></div>
-              <div>
-                <div class="score-row">
-                  <div class="score-ring">
-                    <svg viewBox="0 0 100 100" aria-hidden="true">
-                      <circle class="track" cx="50" cy="50" r="40" fill="none" stroke-width="10" />
-                      <circle class="value" cx="50" cy="50" r="40" fill="none" stroke-width="10"
-                        stroke-linecap="round" />
-                    </svg>
-                    <output aria-label="Quality score">0</output>
-                  </div>
-                  <div>
-                    <div class="score-label">Unified quality score</div>
-                    <div class="score-verdict">—</div>
-                    <div class="score-meta"></div>
-                  </div>
-                </div>
-                <ul class="metrics"></ul>
-              </div>
-            </div>
-            <div class="scanner-foot"><span>Illustrative example</span><span>ISO/IEC 29794 aligned</span></div> -->
-           <div class="scanner-body" id="scan-panel" role="tabpanel" aria-live="polite">
-            <div class="sample-chips" role="group" aria-label="Choose a sample" hidden></div>
-            <div class="scanner-main">
-              <div class="scanner-sample"><img src="assets/img/icons/icon-face.svg" alt="" width="90" height="90"></div>
-              <div>
-                <div class="score-row">
-                  <div class="score-ring">
-                    <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="track" cx="50" cy="50" r="40" fill="none" stroke-width="10"/><circle class="value" cx="50" cy="50" r="40" fill="none" stroke-width="10" stroke-linecap="round"/></svg>
-                    <output aria-label="Quality score">0</output>
-                  </div>
-                  <div>
-                    <div class="score-label"></div>
-                    <div class="score-verdict"></div>
-                    <div class="score-meta"></div>
-                  </div>
-                </div>
-                <ul class="metrics"></ul>
-              </div>
-            </div>
-          </div>
-          <div class="scanner-foot"><span class="scanner-source"></span><a href="https://docs.openbq.io/" target="_blank" rel="noopener">Metric definitions</a></div>
-
-          </div>
+        <div class="mod-orbit" aria-label="Biometric modalities assessed by openbq">
+  <a class="mod-card" href="index.html#what-openbq-is">
+    <span class="mod-card__icon"><img src="assets/img/icons/icon-face-frame-white.svg" alt="" width="48" height="48"></span>
+    <span class="mod-card__name">Face</span>
+    <span class="mod-card__measures">Illumination · Pose · Sharpness</span>
+    <span class="mod-card__std">ISO/IEC 29794-5</span>
+  </a>
+  <a class="mod-card" href="index.html#what-openbq-is">
+    <span class="mod-card__icon"><img src="assets/img/icons/icon-fingerprint-frame-white.svg" alt="" width="48" height="48"></span>
+    <span class="mod-card__name">Fingerprint</span>
+    <span class="mod-card__measures">Clarity · Coverage · Minutiae</span>
+    <span class="mod-card__std">ISO/IEC 29794-4</span>
+  </a>
+  <a class="mod-card" href="index.html#what-openbq-is">
+    <span class="mod-card__icon"><img src="assets/img/icons/icon-iris-frame-white.svg" alt="" width="48" height="48"></span>
+    <span class="mod-card__name">Iris</span>
+    <span class="mod-card__measures">Focus · Usable area · Contrast</span>
+    <span class="mod-card__std">ISO/IEC 29794-6</span>
+  </a>
+  <a class="mod-card" href="index.html#what-openbq-is">
+    <span class="mod-card__icon"><img src="assets/img/icons/icon-voice-frame-white.svg" alt="" width="48" height="48"></span>
+    <span class="mod-card__name">Voice</span>
+    <span class="mod-card__measures">Noise · Clarity · Naturalness</span>
+    <span class="mod-card__std">Speech quality</span>
+  </a>
+  <div class="mod-hub" aria-hidden="true">
+    <span class="mod-hub__ring"></span>
+    <span class="mod-hub__pulse"></span>
+    <span class="mod-hub__core"><img src="assets/img/brand/openbq-icon.svg" alt="" width="64" height="64"></span>
+  </div>
+  <p class="mod-caption">One open framework · four modalities · consistent, standards-based results</p>
+</div>
         </div>
         <div class="hero-trust" aria-label="Highlights">
           <span>ISO/IEC 29794 aligned</span><span>Face · Fingerprint · Iris ·
@@ -162,7 +131,8 @@
       <div class="container">
         <span class="trust-label">Built &amp; validated with</span>
         <div class="trust-items">
-          <span class="chip chip--solid">Biometix</span><span class="chip">MOSIP</span><span class="chip">BixeLab</span>
+          <span class="chip chip--solid">Biometix</span><span class="chip">MOSIP</span>
+          <!-- <span class="chip">BixeLab</span> -->
         </div>
         <div class="trust-items">
           <span class="chip">ISO/IEC 29794</span><span class="chip">NFIQ 2.0</span><span class="chip">OFIQ</span>
@@ -239,7 +209,33 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="mod-title">
+    <section class="section" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="section-head"
+          style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;max-width:none">
+          <div>
+            <span class="eyebrow">News</span>
+            <h2 id="news-title">Latest from Open<b class="bq">Bq</b></h2>
+          </div>
+          <!-- <a class="btn btn--ghost" href="https://www.linkedin.com/company/biometricquality/home/" target="_blank" rel="noopener"><span>Follow us on</span><img src="assets/img/social/linkedin-logo.png" alt="LinkedIn" width="120" height="29"></a> -->
+          <a class="li-follow" href="https://www.linkedin.com/company/biometricquality/home/" target="_blank"
+            rel="noopener" aria-label="Follow openbq on LinkedIn">
+            <span>Follow us on</span>
+            <img src="assets/img/socials/LI-Logo.png" alt="LinkedIn" width="120" height="29">
+          </a>
+        </div>
+
+        <!-- Manually hand-picked posts — from LinkedIn iframes -->
+        <div class="li-posts">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7481245738639745024"
+            title="openbq LinkedIn post" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7481244936009326593" height="916"
+            width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="mod-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Multi-modal by design</span>
@@ -288,7 +284,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="what-title">
+    <section class="section" aria-labelledby="what-title" id = "what-openbq-is">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">What Open<b>Bq</b> does</span>
@@ -370,7 +366,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="who-title">
+    <section class="section section--alt" aria-labelledby="who-title">
       <div class="container">
         <div class="split">
           <div class="photo corners corners--black reveal" style="aspect-ratio:4/3">

@@ -55,6 +55,7 @@
   <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
+    <a href="index.html#news"><img  src="assets/img/socials/LI-In-Bug.png" alt="LinkedIn" width="40" height="30"></a>
 </div>
   </div>
 </header>
@@ -117,7 +118,7 @@
     </div>
   </section>
 
-  <section class="section section--dark" id="architecture-section" aria-labelledby="arch-title">
+  <!-- <section class="section section--dark" id="architecture-section" aria-labelledby="arch-title">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Architecture</span>
@@ -139,7 +140,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="section section--alt" id="deployment-section" aria-labelledby="dep-title">
     <div class="container">
@@ -223,18 +224,7 @@
       <div class="card card--tint">
         <span class="eyebrow">MOSIP integration pathways</span>
         <div class="path">
-          <h3>01 — At biometric capture</h3>
-          <div class="flow flow--compact">
-            <div class="flow-node"><strong>Enrolment station</strong></div>
-            <div class="flow-link" aria-hidden="true"></div>
-            <div class="flow-node flow-node--engine"><strong>Quality assessment</strong></div>
-            <div class="flow-link" aria-hidden="true"></div>
-            <div class="flow-node"><strong>Capture feedback</strong></div>
-          </div>
-          <p class="muted">Identify potential capture problems early and support operator action where the integration permits.</p>
-        </div>
-        <div class="path">
-          <h3>02 — On already-enrolled data</h3>
+          <h3>01 — On already-enrolled data</h3>
           <div class="flow flow--compact">
             <div class="flow-node"><strong>Existing records</strong></div>
             <div class="flow-link" aria-hidden="true"></div>
@@ -244,12 +234,26 @@
           </div>
           <p class="muted">Assess historical data and explore quality patterns for audits, migration and improvement planning.</p>
         </div>
+       <div class="path path--planned">
+  <div class="path-head">
+    <h3>02 — At biometric capture</h3>
+    <span class="status-badge status-badge--planned">On the roadmap</span>
+  </div>
+  <div class="flow flow--compact">
+    <div class="flow-node"><strong>Enrolment station</strong></div>
+    <div class="flow-link" aria-hidden="true"></div>
+    <div class="flow-node flow-node--engine"><strong>Quality assessment</strong></div>
+    <div class="flow-link" aria-hidden="true"></div>
+    <div class="flow-node"><strong>Capture feedback</strong></div>
+  </div>
+  <p class="muted">We’re working towards quality checks at the point of capture, so operators can spot problems and re-capture while the person is still present.</p>
+</div>
       </div>
     </div>
   </div>
 </section>
 
-  <section class="section" id="standards-section" aria-labelledby="std-title">
+  <section class="section section--alt" id="standards-section" aria-labelledby="std-title">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Standards &amp; algorithms</span>
