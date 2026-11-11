@@ -755,3 +755,26 @@ css
 
 .footer-legal a { color: var(--grey-35); text-decoration: underline; text-underline-offset: 3px; }
 .footer-legal a:hover { color: #fff; }
+
+
+/* chage card style */
+/* Hero modality cards: subtle separation from the gradient */
+/* Hero modality cards: sky-blue glass */
+.mod-card {
+  background: linear-gradient(160deg, rgba(214, 231, 245, .78), rgba(187, 215, 238, .6));
+  color: var(--dark-blue);
+  border: 1px solid rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+          backdrop-filter: blur(14px) saturate(140%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .8),   /* glass highlight edge */
+    0 14px 34px rgba(8, 16, 48, .22);
+}
+.mod-card:hover {
+  background: linear-gradient(160deg, rgba(236, 243, 250, .88), rgba(214, 231, 245, .72));
+  color: var(--dark-blue);
+  border-color: #fff;
+}
+.mod-card__measures { color: #24356a; }
+.mod-card__std { background: rgba(255, 255, 255, .5); border-color: rgba(36, 64, 142, .25); }
+.mod-card__icon::after { background: var(--blue); box-shadow: 0 0 10px 2px rgba(59, 139, 202, .6); }
