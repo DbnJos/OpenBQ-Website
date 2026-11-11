@@ -26,11 +26,17 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
   }
 
-  /* ---------- Current page in nav ---------- */
-  const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+   /* ---------- Current page in nav ---------- */
+  const clean = (p) => {
+    const name = (p || '').split('#')[0].split('?')[0].split('/').pop().toLowerCase().replace(/\.html$/, '');
+    return name === '' ? 'index' : name;
+  };
+  const page = clean(location.pathname);
   $$('#site-nav a').forEach((a) => {
-    const href = (a.getAttribute('href') || '').split('#')[0].toLowerCase();
-    if (href === page || (page === '' && href === 'index.html')) a.setAttribute('aria-current', 'page');
+    const href = a.getAttribute('href') || '';
+    if (/^https?:/i.test(href)) return;            // ignore external links
+    if (clean(href) === page) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
 
   /* ---------- Accessible tabs (any [role=tablist]) ---------- */
