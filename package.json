@@ -1,0 +1,13 @@
+{
+  "name": "openbq-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "pnpm dlx serve dist -l 8080"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "html-minifier-terser": "^7.2.0"
+  }
+}

@@ -1,4 +1,7 @@
+# Dependencies
+node_modules/
+
 .DS_Store
 Thumbs.db
 .vscode/
-*.log
+pnpm-debug.log*
