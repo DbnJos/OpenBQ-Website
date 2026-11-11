@@ -277,7 +277,7 @@
 
   /* ---------- Lifecycle wheel ---------- */
   const wheel = $('#lifecycle');
-  if (wheel) {
+if (wheel && $('#stage-panel')) {
     const stages = [
       { name: 'Acquisition device', text: 'Benchmark capture devices before you buy them, and catch sensor issues before they reach your registry.',
         points: ['Product selection and tender evaluation', 'Device evaluations with accredited labs', 'Real-time capture feedback'] },
@@ -385,3 +385,5 @@
     }
   });
 })();
+
+
